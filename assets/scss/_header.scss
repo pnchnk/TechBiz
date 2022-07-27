@@ -188,6 +188,8 @@
 .header-bot-menu-form input {
     outline: none;
     border: none;
+    font-family: $font-fira;
+    font-size: 14px;
 
     &:focus{
         background-color: #EFF1F5;
@@ -286,7 +288,67 @@
 }
 
 
+//mobile menu styling 
 
+.mobile-menu {
+    max-width: 310px !important;
+}
+
+.mobile-menu-header {
+    padding: 40px 0 30px 0 !important;
+    background-color: rgba(28,185,200,0.1);
+}
+
+.mobile-menu-list li {
+    font-family: $font-fira;
+    font-size: 16px;   
+}
+
+.mobile-inner-list{
+    list-style: none;
+
+    li {
+        padding: 12px 0;
+        border-bottom: 1px #fdedf1 solid;
+        font-family: $font-fira;
+        font-size: 16px;
+    }
+}
+
+.mobile-inner-list li a {
+    position: relative;
+    
+    
+    .fa-chevron-right::before {
+        display: block;
+        position: absolute;
+        content: '\f054';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 600 !important;
+        top: 4px;
+        left: 14px;   
+        font-size: 12px;
+    }
+}
+
+.mobile-outer-list {
+    border-bottom: 1px #fdedf1 solid;
+}
+
+.mobile-menu-list-button {
+    position: relative;
+
+    .fa-chevron-right::before {
+        display: block;
+        position: absolute;
+        content: '\f054';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 600 !important;
+        top: 10px;
+        left: 2px;   
+        font-size: 14px;
+    }
+}
 
 
 

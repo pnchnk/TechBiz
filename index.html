@@ -194,9 +194,134 @@
                                 <li><a href="#" class="nav-link text-black">Contact</a></li>
                               </ul>                                
                         </nav>
-                        <button class="menu-list-button d-block d-lg-none my-sm-2">
+                        <button class="menu-list-button d-block d-lg-none my-sm-2" type="button" data-bs-toggle="offcanvas"   data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             <i class="far fa-bars"></i>
                         </button>
+                        <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header mobile-menu-header justify-content-center">
+                              <a href="#">
+                                <img src="https://themeforest.vecuro.com/html/techbiz/demo/assets/img/logo.png" alt="logo" class="mobile-menu-logo">
+                              </a>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="list-unstyled pt-4 ps-4 mobile-menu-list">
+                                    <li class="mb-1 mobile-outer-list">
+                                      <button class="btn btn-toggle align-items-center rounded collapsed mobile-menu-list-button" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Home
+                                      </button>
+                                      <div class="collapse" id="home-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small mobile-inner-list">
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Home one</a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Home two
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Home three
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li class="mb-1 mobile-outer-list">
+                                      <button class="btn btn-toggle align-items-center rounded collapsed mobile-menu-list-button" data-bs-toggle="collapse" data-bs-target="#about-us-collapse" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                        About us
+                                      </button>                                    
+                                    </li>
+                                    <li class="mb-1 mobile-outer-list">
+                                      <button class="btn btn-toggle align-items-center rounded collapsed mobile-menu-list-button" data-bs-toggle="collapse" data-bs-target="#blog-collapse" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Blog
+                                      </button>
+                                      <div class="collapse" id="blog-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small mobile-inner-list">
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Blog list</a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Blog grid
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Blog details
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li class="mb-1 mobile-outer-list">
+                                      <button class="btn btn-toggle align-items-center rounded collapsed mobile-menu-list-button" data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Pages
+                                      </button>
+                                      <div class="collapse" id="pages-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small mobile-inner-list">
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Pricing plans
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Projects
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                            Project details
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Service details 
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Team
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a href="#" class="link-dark rounded ps-4">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Team details
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li class="mb-1 mobile-outer-list">
+                                        <button class="btn btn-toggle align-items-center rounded collapsed mobile-menu-list-button" data-bs-toggle="collapse" data-bs-target="#contact-collapse" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                          Contact Us
+                                        </button>
+                                      </li>
+                                  </ul>
+                              
+                            </div>
+                          </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-8">
                         <form class="header-bot-menu-form mb-3 mt-3 mt-lg-0 mb-lg-1 d-flex">
