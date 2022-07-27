@@ -7,19 +7,19 @@ a {
   background-color: #0e5af2;
   padding: 9.5px 0 9.5px 0;
 }
-.header-top .header-top__text {
+.header-top .header-top-text {
   color: white;
   font-weight: 400;
   margin: 0 !important;
 }
-.header-top .header-top__links a {
+.header-top .header-top-links a {
   margin-left: 16px;
   font-size: 14px;
 }
-.header-top .header-top__links .links-title {
+.header-top .header-top-links .links-title {
   font-size: 14px;
 }
-.header-top .header-top__links .fa-instagram::before {
+.header-top .header-top-links .fa-instagram::before {
   display: block;
   content: "\f16d";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -29,7 +29,7 @@ a {
   color: white;
   transition: color 0.5s ease;
 }
-.header-top .header-top__links .fa-facebook-f::before {
+.header-top .header-top-links .fa-facebook-f::before {
   display: block;
   content: "\f39e";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -39,7 +39,7 @@ a {
   color: white;
   transition: color 0.5s ease;
 }
-.header-top .header-top__links .fa-twitter::before {
+.header-top .header-top-links .fa-twitter::before {
   display: block;
   content: "\f099";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -49,7 +49,7 @@ a {
   color: white;
   transition: color 0.5s ease;
 }
-.header-top .header-top__links .fa-behance::before {
+.header-top .header-top-links .fa-behance::before {
   display: block;
   content: "\f1b4";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -59,7 +59,7 @@ a {
   color: white;
   transition: color 0.5s ease;
 }
-.header-top .header-top__links .fa-youtube::before {
+.header-top .header-top-links .fa-youtube::before {
   display: block;
   content: "\f167";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -70,53 +70,53 @@ a {
   transition: color 0.5s ease;
 }
 
-.header-top__links a:hover .fa-facebook-f::before {
+.header-top-links a:hover .fa-facebook-f::before {
   color: black;
 }
 
-.header-top__links a:hover .fa-envelope::before {
+.header-top-links a:hover .fa-envelope::before {
   color: black;
 }
 
-.header-top__links a:hover .fa-instagram::before {
+.header-top-links a:hover .fa-instagram::before {
   color: black;
 }
 
-.header-top__links a:hover .fa-behance::before {
+.header-top-links a:hover .fa-behance::before {
   color: black;
 }
 
-.header-top__links a:hover .fa-youtube::before {
+.header-top-links a:hover .fa-youtube::before {
   color: black;
 }
 
-.header-top__links a:hover .fa-twitter::before {
+.header-top-links a:hover .fa-twitter::before {
   color: black;
 }
 
-.header-middle__info {
+.header-middle-info {
   padding: 28px 0 28px 0;
   font-size: 24px;
 }
-.header-middle__info .info-body__description {
+.header-middle-info .info-body-description {
   font-size: 14px;
   font-family: "Fira Sans", sans-serif;
   color: #878D97;
 }
-.header-middle__info .info__logo {
+.header-middle-info .info-logo {
   margin-right: 20px;
   text-align: center;
 }
-.header-middle__info .info-body__link {
+.header-middle-info .info-body-link {
   font-size: 20px;
   font-weight: 800 !important;
   font-family: "Fira Sans", sans-serif;
   outline: 0;
 }
-.header-middle__info .info-body__link a {
+.header-middle-info .info-body-link a {
   color: black !important;
 }
-.header-middle__info .fa-phone-alt::before {
+.header-middle-info .fa-phone-alt::before {
   display: block;
   content: "\f879";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -124,14 +124,14 @@ a {
   color: #0E5AF2;
   transform: scaleX(-1);
 }
-.header-middle__info .fa-envelope::before {
+.header-middle-info .fa-envelope::before {
   display: block;
   content: "\f0e0";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   color: #0E5AF2;
 }
-.header-middle__info .fa-map-marker-alt {
+.header-middle-info .fa-map-marker-alt:before {
   display: block;
   content: "\f3c5";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -139,13 +139,137 @@ a {
   color: #0E5AF2;
 }
 
-@keyframes icon {
-  from {
-    color: white;
-  }
-  to {
-    color: black;
-  }
+.menu-list li {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+}
+
+.menu-list-button {
+  font-size: 24px;
+  width: 50px;
+  height: 40px;
+  border: none !important;
+  background-color: #f2f6ff;
+}
+
+.fa-bars:before {
+  display: block;
+  content: "\f0c9";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 600 !important;
+  color: #0E5AF2;
+}
+
+.header-bot-menu-form input {
+  outline: none;
+  border: none;
+}
+.header-bot-menu-form input:focus {
+  background-color: #EFF1F5;
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.header-bot-menu-search {
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: #0E5AF2 !important;
+  font-size: 13px;
+  text-align: center !important;
+  position: relative;
+}
+
+.fa-search {
+  display: inline-block;
+  content: "\f002";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 900;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown-list {
+  min-width: 190px !important;
+  border: none !important;
+  border-bottom: 3px solid #0E5AF2 !important;
+  padding: 18px 20px !important;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.09), 0px 3px 0px 0px rgba(231, 13, 60, 0);
+  border-radius: 0px !important;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  left: 30.5px;
+  top: 30px;
+  width: 1px;
+  background-color: #ededed;
+  height: calc(100% - 60px);
+}
+.dropdown-list li {
+  padding: 3px 9px;
+}
+.dropdown-list li a {
+  font-weight: 600 !important;
+}
+
+.list-item {
+  position: relative;
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -3px;
+  width: 11px;
+  height: 11px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 0.2em;
+  line-height: 11.5px;
+  font-weight: 700;
+  background-color: white;
+  box-shadow: inset 0px 2px 4px 0px rgba(173, 136, 88, 0.4);
+}
+
+.dropdown-list-big {
+  width: max-content !important;
+  border: none !important;
+  border-bottom: 3px solid #0E5AF2 !important;
+  padding: 18px 20px !important;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.09), 0px 3px 0px 0px rgba(231, 13, 60, 0);
+  border-radius: 0px !important;
+  transform: translate(300px, 210px) !important;
+}
+
+.big-li {
+  padding: 0 15px;
+  min-width: 300px;
+}
+
+.big-li-inner-list {
+  list-style: none;
+}
+
+.big-li-inner-list li a {
+  position: relative;
+}
+
+.fa-chevron-right::before {
+  display: block;
+  position: absolute;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 600 !important;
+  top: 6px;
+  left: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,13 +4,13 @@
     background-color: #0e5af2;
 
     padding: 9.5px 0 9.5px 0;
-    .header-top__text {
+    .header-top-text {
         color: white;
         font-weight: 400;
         margin: 0 !important;
     }
 
-    .header-top__links {
+    .header-top-links {
         a {
             margin-left: 16px;
             font-size: 14px;    
@@ -77,47 +77,50 @@
     }  
 }
 
-.header-top__links a:hover .fa-facebook-f::before {
+.header-top-links a:hover .fa-facebook-f::before {
     color: black;
 }
 
-.header-top__links a:hover .fa-envelope::before {
+.header-top-links a:hover .fa-envelope::before {
     color: black;
 }
 
-.header-top__links a:hover .fa-instagram::before {
+.header-top-links a:hover .fa-instagram::before {
     color: black;
 }
 
-.header-top__links a:hover .fa-behance::before {
+.header-top-links a:hover .fa-behance::before {
     color: black;
 }
 
-.header-top__links a:hover .fa-youtube::before {
+.header-top-links a:hover .fa-youtube::before {
     color: black;
 }
 
-.header-top__links a:hover .fa-twitter::before {
+.header-top-links a:hover .fa-twitter::before {
     color: black;
 }
 
-.header-middle__info {
+
+//middle part of header
+
+.header-middle-info {
 
     padding: 28px 0 28px 0;
     font-size: 24px;
 
-    .info-body__description {
+    .info-body-description {
         font-size: 14px;
         font-family: $font-fira;
         color: #878D97;
     }
 
-    .info__logo {
+    .info-logo {
         margin-right: 20px;
         text-align: center;
     }
 
-    .info-body__link {
+    .info-body-link {
         font-size: 20px;
         font-weight: 800 !important;
         font-family:  $font-fira;
@@ -146,7 +149,7 @@
         color: #0E5AF2;
     }
 
-    .fa-map-marker-alt {
+    .fa-map-marker-alt:before {
         display: block;
         content: '\f3c5';
         font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
@@ -154,6 +157,137 @@
         color: #0E5AF2;
     }
 }
+
+
+//bottom part of header 
+
+.menu-list {
+    li {
+        font-family: $font-exo;
+        font-weight: 600;
+    }
+}
+
+
+.menu-list-button {
+    font-size: 24px;
+    width: 50px;
+    height: 40px;
+    border: none !important;
+    background-color: #f2f6ff;
+}
+
+.fa-bars:before {
+        display: block;
+        content: '\f0c9';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 600 !important;
+        color: #0E5AF2;   
+}
+
+.header-bot-menu-form input {
+    outline: none;
+    border: none;
+
+    &:focus{
+        background-color: #EFF1F5;
+        outline: none;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.header-bot-menu-search {
+    border: none;
+    width: 35px;
+    height: 35px;
+    background-color: #0E5AF2 !important;
+    font-size: 13px;
+    text-align: center !important;
+    position: relative;
+}
+
+.fa-search {
+    display: inline-block;
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: white; 
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+// dropdown menu styling
+
+.dropdown-list {
+    @include dropdown-menu-style;
+
+    &::before {   
+        content: '';
+        position: absolute;
+        left: 30.5px;
+        top: 30px;
+        width: 1px;
+        background-color: #ededed;
+        height: calc(100% - 60px);
+    }
+
+    li {
+        padding: 3px 9px;
+    }
+
+    li a {
+        font-weight: 600 !important;
+    }
+}
+
+.list-item {
+    position: relative;
+}
+
+.list-item::before {          
+    @include dropdown-list-dots; 
+}
+
+.dropdown-list-big {
+    width: max-content !important;
+    border: none !important;
+    border-bottom: 3px solid #0E5AF2 !important;
+    padding: 18px 20px !important;
+    box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 9%), 0px 3px 0px 0px rgb(231 13 60 / 0%);
+    border-radius: 0px !important;  
+    transform: translate(300px, 210px) !important;
+}
+
+.big-li {
+    padding: 0 15px;
+    min-width: 300px;
+}
+
+.big-li-inner-list{
+    list-style: none;
+}
+
+.big-li-inner-list li a {
+    position: relative;
+}
+
+.fa-chevron-right::before {
+    display: block;
+    position: absolute;
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+    font-weight: 600 !important;
+    top: 6px;
+    left: 1px;   
+}
+
+
+
+
 
 
 
