@@ -351,6 +351,21 @@
 }
 
 
+//adaptive
+
+@media (max-width: 575px) {
+    .info-body-link a {
+        font-size: 12px;
+    }
+    .info-body {
+        font-size: 12px;
+    }
+
+    .mobile-menu {
+        max-width: 280px !important;
+    }
+}
+
 
 
 

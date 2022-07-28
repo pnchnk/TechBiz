@@ -1,0 +1,193 @@
+#footer {
+    background-image: url('../img/bg-footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer-top {
+    border-bottom: 1px solid #152b54;
+}
+
+.footer-top-group {
+    padding: 60px 0 60px 0;
+    border-right: 1px solid #152b54;
+}
+
+.footer-top-group:last-child {
+    border: none;
+}
+
+
+.footer-top-info-icon {
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    background-color: #152b54;
+    border-radius: 5px;
+    margin-right: 25px;
+    text-align: center;
+
+}
+
+
+
+.fa-map-marker-alt:before {
+    content: '\f3c5';
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands'; 
+    font-size: 30px;
+    color: white;
+    font-weight: 600; 
+}
+
+.fa-clock:before {
+    content: '\f017';
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands'; 
+    font-size: 30px;
+    color: white;
+    font-weight: 600; 
+}
+
+.fa-phone-volume::before {
+    content: '\f2a0';
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands'; 
+    font-size: 30px;
+    color: white;
+    font-weight: 600; 
+}
+
+.footer-top-info-description {
+    line-height: 26px;
+}
+
+.info-description-label {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: $font-exo;
+}
+
+.info-description-text {
+    max-width: 190px;
+    color: #8a99b4;
+    font-size: 14px;
+}
+
+.footer-bot {
+    padding: 48px 0 10px 0;
+}
+
+.footer-bot-info {
+    margin-bottom: 40px;
+}
+
+.footer-bot-info-title {
+    margin-bottom: 27px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $font-exo;
+    color: white;   
+}
+
+.info-about-text {
+    max-width: 275px;
+    color: #8A99B4;
+    font-size: 16px;
+    font-family: $font-fira;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.info-about-social {
+    a {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        background-color: #15284c;
+        margin-right: 5px;
+        text-align: center;
+
+        &:hover {
+            background-color: #0E5AF2;
+            color: white !important;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer-bot-menu {
+    list-style-type: none;
+    padding-left: 0;
+    
+    li {
+        padding-bottom: 10px;
+        font-family: $font-fira;
+        font-size: 16px;
+
+        a {
+            color: #8A99B4;
+        }
+    }
+}
+
+.footer-bot-menu-map {
+    max-width: 400px;
+
+    iframe {
+        height: 180px;
+        width: 100%;
+    }
+}
+
+.copyright {
+    text-align: center;
+    padding: 29px 0;
+    background-color: #0b2048;
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: #8A99B4;
+}
+
+.fa-copyright::before {
+    content: '\f1f9';
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands'; 
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+}
+
+
+//adaptive 
+@media (max-width: 1999px) {
+    .footer-top-info-icon {
+        margin: auto;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    .footer-top-info-description {
+        text-align: center !important;
+    }
+}
+
+@media (max-width:991px) {
+    .info-about-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    
+}

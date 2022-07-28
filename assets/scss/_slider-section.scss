@@ -1,0 +1,48 @@
+.slider-section {
+    position: relative;
+}
+
+.slider-text {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+
+    h5 {
+        font-size: 60px;
+        font-family: $font-exo;
+        font-weight: 700;
+        position: relative;
+        text-align: left;
+    }
+
+    h6 {
+        font-size: 60px;
+        font-family: $font-exo;
+        font-weight: 700;
+        position: relative; 
+        text-align: left;
+    }
+
+    .slider-text-bordered-desc {
+        font-size: 18px;
+        border: 2px solid white;
+        border-radius: 4px;
+        padding: 9px 23.5px;
+        vertical-align: middle;
+        margin-left: 20px;
+        width: 310px;
+        letter-spacing: 0px;
+        text-align: center !important;
+    }
+
+    p {
+        width: 50%;
+        font-size: 16px;
+        font-family: $font-exo;
+        text-align: left;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+}
