@@ -287,6 +287,15 @@
     left: 1px;   
 }
 
+.menu-list li:hover  ul.dropdown-list {
+    display: block !important;
+}
+
+.menu-list li:hover > ul.dropdown-list-big {
+    display: block;
+    transform: translate(-339px, 3px) !important;
+}
+
 
 //mobile menu styling 
 
