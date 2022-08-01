@@ -23,3 +23,11 @@
     box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 9%), 0px 3px 0px 0px rgb(231 13 60 / 0%);
     border-radius: 0px !important;  
 }
+
+@mixin buttons {
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+    font-family: $font-fira;
+    font-weight: 500 !important;
+    padding: 15px 30px;
+}

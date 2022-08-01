@@ -1,0 +1,98 @@
+.services {
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/ab-bg-1-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.services-card {
+    padding: 50px 40px;
+    margin-bottom: 30px !important;
+    position: relative;
+    font-family: $font-fira;
+    border: none !important;
+    width: 95%;
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    button {
+        text-transform: uppercase !important;
+        font-size: 16px !important;
+        font-family: $font-fira;
+        font-weight: 500 !important;
+        margin-top: 20px;   
+        background-color: #EFF1F5;
+        color: #0E5AF2;  
+        border: none;
+    }
+
+    .fa-arrow-right::before {
+        content: '\f061';
+        display: block;  
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 600 !important;       
+        font-size: 16px;
+    }
+
+    .card-body {
+        padding-left: 0 !important;
+
+        .card-text {
+            color:#878D97 !important;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 40px;
+        bottom: 0;
+        height: 3px;
+        width: calc(100% - 80px);
+        background-color: blue;
+    }
+}
+
+.services-card:hover {
+    button {
+        background-color: #0E5AF2;
+        color: white;
+    }
+}
+
+.card-body button:hover {
+    background-color: black !important;
+}
+
+@media (min-width:1200px) {
+    .scrolling-wrapper {
+        margin-top: -75px;
+    }
+}
+
+@media (max-width:1999px) {
+    .scrolling-wrapper {
+        display: flex !important;
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .services-card {
+        padding: 40px 20px;
+        overflow: hidden;
+    }
+}
+

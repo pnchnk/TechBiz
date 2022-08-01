@@ -605,6 +605,16 @@ a {
   font-size: 16px;
 }
 
+@media (min-width: 1900px) {
+  .slider-text {
+    top: 200px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-text {
+    top: 100px;
+  }
+}
 @media (max-width: 1199px) {
   .slider-text {
     top: 20%;
@@ -658,7 +668,14 @@ a {
     font-size: 11px !important;
     font-family: "Fira Sans", sans-serif;
     font-weight: 500 !important;
-    padding: 5px 10px;
+    padding: 4px 6px;
+  }
+  .slider-btn-group .fa-arrow-right::before {
+    content: "\f061";
+    display: block;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+    font-weight: 600 !important;
+    font-size: 12px;
   }
 
   .carousel-item {
@@ -693,6 +710,90 @@ a {
     position: absolute;
     top: -50px;
     left: -20px;
+  }
+}
+.services {
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/ab-bg-1-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.services-card {
+  padding: 50px 40px;
+  margin-bottom: 30px !important;
+  position: relative;
+  font-family: "Fira Sans", sans-serif;
+  border: none !important;
+  width: 95%;
+}
+.services-card img {
+  width: 70px;
+  height: 70px;
+}
+.services-card button {
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500 !important;
+  margin-top: 20px;
+  background-color: #EFF1F5;
+  color: #0E5AF2;
+  border: none;
+}
+.services-card .fa-arrow-right::before {
+  content: "\f061";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 600 !important;
+  font-size: 16px;
+}
+.services-card .card-body {
+  padding-left: 0 !important;
+}
+.services-card .card-body .card-text {
+  color: #878D97 !important;
+}
+.services-card::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+  height: 3px;
+  width: calc(100% - 80px);
+  background-color: blue;
+}
+
+.services-card:hover button {
+  background-color: #0E5AF2;
+  color: white;
+}
+
+.card-body button:hover {
+  background-color: black !important;
+}
+
+@media (min-width: 1200px) {
+  .scrolling-wrapper {
+    margin-top: -75px;
+  }
+}
+@media (max-width: 1999px) {
+  .scrolling-wrapper {
+    display: flex !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .services-card {
+    padding: 40px 20px;
+    overflow: hidden;
   }
 }
 
