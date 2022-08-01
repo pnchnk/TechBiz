@@ -197,7 +197,10 @@
 }
 
 @media (max-width: 767px) {
-    iframe {
-        
-    }
+   .footer-bot-menu-map {
+    display: contents;
+     iframe {
+        height: 250px;
+     }
+   }
 }

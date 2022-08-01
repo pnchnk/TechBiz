@@ -46,3 +46,127 @@
         font-weight: 500;
     }
 }
+
+.slider-btn-group {
+    gap: 20px;
+
+    button {
+        text-transform: uppercase !important;
+        font-size: 16px !important;
+        font-family: $font-fira;
+        font-weight: 500 !important;
+        padding: 15px 30px;
+    }
+
+    .fa-arrow-right::before {
+        content: '\f061';
+        display: block;  
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 600 !important;       
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .slider-text {
+
+        top: 20%;
+        left: 40px;
+        width: 40%;
+
+        h5, h6 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .slider-text-bordered-desc {
+            position: absolute;
+            top: -50px;
+            left: -20px;
+        }
+    }
+
+    .slider-btn-group {
+        gap: 20px;
+        margin-top: 10%;
+    
+        button {
+            text-transform: uppercase !important;
+            font-size: 11px !important;
+            font-family: $font-fira;
+            font-weight: 500 !important;
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .slider-text {
+        margin: auto !important;
+        width: 50%;
+        left: 0;
+       
+        h5, h6 {
+            text-align: center;
+        }
+
+        .slider-text-bordered-desc {
+            left: 10px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .slider-btn-group {
+        gap: 20px;
+        margin-top: 2%;
+    
+        button {
+            text-transform: uppercase !important;
+            font-size: 11px !important;
+            font-family: $font-fira;
+            font-weight: 500 !important;
+            padding: 5px 10px;
+        }
+    }
+
+    .carousel-item {
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+    .carousel-item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+    .carousel-indicators li {
+        border-color: #000;
+    }
+    .carousel-indicators .active {
+      background-color: #000;
+    }
+
+    .slider-text {
+
+        top: 20%;
+        left: 40px;
+        width: 50%;
+
+        h5, h6 {
+            font-size: 32px;
+        }
+
+        .slider-text-bordered-desc {
+            position: absolute;
+            top: -50px;
+            left: -20px;
+        }
+    }
+}
