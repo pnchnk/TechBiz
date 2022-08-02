@@ -773,6 +773,147 @@ a {
   background-color: black !important;
 }
 
+.services-bottom {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.big-text-techbiz {
+  font-size: 150px;
+  font-weight: 400;
+  font-family: var(--title-font);
+  display: inline-block;
+  writing-mode: tb-rl;
+  text-transform: uppercase;
+  transform: rotate(180deg);
+  position: absolute;
+  right: 95px;
+  bottom: 125px;
+  color: rgba(14, 89, 242, 0.07);
+}
+
+.img-1 img {
+  border-radius: 5px;
+}
+
+.img-2 {
+  z-index: 1;
+  margin: -205px 0 0 auto;
+  max-width: 100%;
+  width: fit-content;
+  position: relative;
+}
+.img-2 .fa-play::before {
+  content: "\f04b";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 900 !important;
+  font-size: 18px;
+}
+.img-2 .img-2-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+.img-2 .img-2-button:hover {
+  background-color: black !important;
+}
+
+.service-bottom-title {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #0E5AF2;
+  font-family: "Exo", sans-serif;
+}
+.service-bottom-title .fa-stop {
+  margin-right: 15px;
+}
+.service-bottom-title .fa-stop::before {
+  content: "\f04d";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Font Awesome 5 Pro" !important;
+  font-weight: 900;
+  font-size: 16px;
+  color: #0E5AF2;
+}
+
+.service-bottom-description .bottom-description-title {
+  font-size: 48px;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+}
+.service-bottom-description p {
+  color: #878D97;
+  font-weight: 400;
+  font-family: "Exo", sans-serif;
+}
+
+.service-bottom-call {
+  padding: 10px 40px 10px 10px;
+  box-shadow: 0px 10px 31px rgba(169, 177, 193, 0.17);
+  width: fit-content;
+  margin-bottom: 40px !important;
+}
+.service-bottom-call .call-icon {
+  background-color: #EFF1F5;
+  width: 95px;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.call-body .call-body-label {
+  font-size: 14px;
+  font-family: "Exo", sans-serif;
+  color: #878D97;
+}
+.call-body .call-body-tel {
+  margin-top: 12px;
+  color: black;
+  font-family: "Exo", sans-serif;
+  font-weight: 700 !important;
+}
+.call-body .call-body-tel a {
+  color: black;
+  font-weight: inherit;
+  transition: color 0.3s ease;
+}
+.call-body .call-body-tel a:hover {
+  color: #0E5AF2;
+}
+
+.service-bottom-btn {
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500 !important;
+  padding: 19px 30.5px !important;
+  transition: all color 0.3s ease !important;
+  border: none !important;
+  outline: 0 !important;
+}
+.service-bottom-btn:hover {
+  background-color: black !important;
+}
+.service-bottom-btn .fa-arrow-right::before {
+  content: "\f061";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 800 !important;
+  font-size: 14px;
+}
+
+@media (max-width: 1500px) {
+  .big-text-techbiz {
+    font-size: 80px;
+    right: 50px;
+    bottom: 85px;
+  }
+}
 @media (min-width: 1200px) {
   .scrolling-wrapper {
     margin-top: -75px;
@@ -794,6 +935,46 @@ a {
   .services-card {
     padding: 40px 20px;
     overflow: hidden;
+  }
+
+  .img-1 img {
+    width: 100%;
+  }
+
+  .img-2 {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+  .img-2 img {
+    width: 100%;
+  }
+
+  .services-bottom {
+    padding-bottom: 70px;
+  }
+
+  .service-bottom-description h2 {
+    font-size: 30px !important;
+  }
+
+  .call-icon {
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+  }
+  .call-icon img {
+    max-width: 25px;
+  }
+
+  .call-body {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .call-body .call-body-label {
+    font-size: 12px !important;
+  }
+  .call-body .call-body-tel {
+    margin: 2px 0 2px 0;
   }
 }
 
