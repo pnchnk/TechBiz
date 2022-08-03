@@ -1,0 +1,93 @@
+#numbers {
+    position: relative;
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/counter-bg-1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.numbers-card-row {
+    padding: 120px 0 120px 0;
+}
+
+.numbers-card {
+    .numbers-card-img {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        background-color: #0E5AF2;
+        margin-right: 25px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .numbers-card-body {
+        .body-numbers {
+            display: block;
+            margin-bottom: 7px;
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+            font-family: $font-exo;
+            line-height: 1;
+        }
+
+        .body-paragraph {
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            line-height: 1;
+            text-transform: uppercase;
+            margin: 0;
+            font-family: $font-exo;
+        }
+    }
+}
+
+@media (max-width:1999px) {
+    .numbers-card {
+        flex-direction: column;
+        text-align: center;
+        .numbers-card-img {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .numbers-card-row {
+        padding: 80px 0;
+    }
+    .numbers-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:575px) {
+    .numbers-card-row {
+        padding: 40px 0;
+    }
+    .numbers-card {
+        margin-bottom: 25px;
+    }
+    .numbers-card-img {
+        width: 70px !important;
+        height: 70px !important;
+        line-height: 70px !important;
+        border-radius: 5px;
+
+        img {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    .numbers-card-body {
+        .body-numbers {
+            font-size: 32px !important;
+        }
+        font-size: 32px !important;
+    }
+}
