@@ -1,0 +1,149 @@
+#offer {
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/sr-bg-1-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    padding-bottom: 90px;
+}
+
+.offer-title {
+    padding-top: 120px; 
+    margin-bottom: 50px;
+    .offer-title-span {
+        font-size: 16px;
+        color: #0E5AF2;
+        text-transform: uppercase;
+        font-family: $font-exo;
+        margin-bottom: 20px;
+        display: block;
+        font-weight: 600;
+    }
+    .offer-title-h2 {
+        text-transform: uppercase;
+        font-family: $font-exo;
+        font-weight: 700;
+        font-size: 48px;
+    }
+}
+
+.offer-card {
+    position: relative;
+    padding: 40px;
+    box-shadow: 0px 16px 47px rgb(78 111 178 / 7%);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: white;
+    &:hover {
+        background-color: #0E5AF2;
+        box-shadow: 0px 16px 47px rgb(14 89 242 / 20%);
+        .offer-card-bg-img {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+        p, .offer-card-h3 a {
+            color: white;
+        }
+    }
+
+    p {
+        font-family: $font-fira;
+        font-weight: 400;
+        color: #878D97;
+        position: relative;
+    }
+
+    .offer-card-bg-img {
+        opacity: 0;
+        visibility: hidden;
+        background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/sr-box-bg-1.jpg');
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(1.1);
+        transition: all ease 0.4s;
+        z-index: 0;
+    }
+
+    .offer-card-img {
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #EFF1F5;
+        margin-bottom: 28px;
+        z-index: 5;
+        position: relative;
+    }
+
+    .offer-card-h3 {
+        font-size: 24px;
+        font-family: $font-exo;
+        font-weight: 700;
+        margin-bottom: 15px;
+        z-index: 5;
+        position: relative;
+        a {
+            color: black;
+        }
+    }
+}
+
+.offer-btn {
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+    font-family: $font-fira;
+    font-weight: 500 !important;
+    padding: 12px 30.5px !important;
+    transition: all color 0.3s ease !important;
+    border: none !important;
+    outline: 0 !important;
+    background-color: #EFF1F5 !important;
+    color: #0E5AF2 !important;
+    z-index: 5 !important;
+    position: relative !important;
+    &:hover {
+        color: white !important;
+        background-color: black !important;
+    }
+
+    .fa-arrow-right::before {
+        content: '\f061';
+        display: block;  
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 800 !important;       
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .offer-card {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    #offer {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    #offer {
+        padding-bottom: 20px;
+    }
+    .offer-card {
+       .offer-card-h3 {
+        font-size: 18px;
+       }
+
+       p {
+        font-size: 14px;
+       }
+    }
+}
