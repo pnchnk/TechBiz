@@ -15,8 +15,8 @@
     width: 95%;
 
     img {
-        width: 70px;
-        height: 70px;
+        width: 70px !important;
+        height: 70px !important;
     }
 
     button {
@@ -232,19 +232,6 @@
     }
 }
 
-@media (max-width:1999px) {
-    .scrolling-wrapper {
-        display: flex !important;
-        overflow-x: auto !important;
-        flex-wrap: nowrap !important;
-        justify-content: flex-start !important;
-    }
-
-    .scrolling-wrapper::-webkit-scrollbar {
-        display: none;
-    }
-
-}
 
 @media (max-width:767px) {
 

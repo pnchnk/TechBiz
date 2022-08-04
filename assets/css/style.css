@@ -732,8 +732,8 @@ a {
   width: 95%;
 }
 .services-card img {
-  width: 70px;
-  height: 70px;
+  width: 70px !important;
+  height: 70px !important;
 }
 .services-card button {
   text-transform: uppercase !important;
@@ -923,18 +923,6 @@ a {
     margin-top: -75px;
   }
 }
-@media (max-width: 1999px) {
-  .scrolling-wrapper {
-    display: flex !important;
-    overflow-x: auto !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-  }
-
-  .scrolling-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-}
 @media (max-width: 767px) {
   .services-card {
     padding: 40px 20px;
@@ -1114,6 +1102,10 @@ a {
     padding-bottom: 20px;
   }
 
+  .offer-title {
+    padding-top: 50px;
+  }
+
   .offer-card .offer-card-h3 {
     font-size: 18px;
   }
@@ -1161,7 +1153,7 @@ a {
   font-family: "Exo", sans-serif;
 }
 
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
   .numbers-card {
     flex-direction: column;
     text-align: center;
@@ -1206,6 +1198,169 @@ a {
   .numbers-card-body .body-numbers {
     font-size: 32px !important;
   }
+}
+.team-title {
+  padding-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team-title .team-title-span {
+  font-size: 16px;
+  color: #0E5AF2;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 600;
+}
+.team-title .team-title-h2 {
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.team-card {
+  background-color: white;
+  box-shadow: 0px 10px 31px rgba(169, 177, 193, 0.07);
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.team-card .team-img {
+  overflow: hidden;
+  position: relative;
+}
+.team-card .team-img img {
+  transition: all ease 0.4s;
+}
+.team-card:hover {
+  background-color: #f6f7fa;
+}
+.team-card:hover .team-img img {
+  transform: scale(1.1);
+}
+.team-card:hover .team-social {
+  visibility: visible;
+  opacity: 1;
+}
+
+.team-social {
+  position: absolute;
+  background-color: #0E5AF2;
+  padding: 16.5px 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.4s;
+}
+.team-social a {
+  margin-right: 16px;
+  font-size: 16px;
+}
+.team-social a:last-of-type {
+  margin-right: 0;
+}
+.team-social .fa-instagram::before {
+  display: block;
+  content: "\f16d";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.team-social .fa-facebook-f::before {
+  display: block;
+  content: "\f39e";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.team-social .fa-twitter::before {
+  display: block;
+  content: "\f099";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.team-social .fa-behance::before {
+  display: block;
+  content: "\f1b4";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.team-social .fa-youtube::before {
+  display: block;
+  content: "\f167";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+
+.team-social a:hover .fa-facebook-f::before {
+  color: white;
+}
+
+.team-social a:hover .fa-envelope::before {
+  color: white;
+}
+
+.team-social a:hover .fa-instagram::before {
+  color: white;
+}
+
+.team-social a:hover .fa-behance::before {
+  color: white;
+}
+
+.team-social a:hover .fa-youtube::before {
+  color: white;
+}
+
+.team-social a:hover .fa-twitter::before {
+  color: white;
+}
+
+.team-bio {
+  padding: 30px 0 23px 0;
+  text-align: center;
+}
+.team-bio h3 {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.team-bio h3 a {
+  color: black;
+  transition: all ease 0.4s;
+}
+.team-bio h3 a:hover {
+  color: #0E5AF2;
+}
+.team-bio p {
+  font-size: 14px;
+  color: #0E5AF2;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
