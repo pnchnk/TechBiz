@@ -255,6 +255,13 @@ a {
   padding: 0 15px;
   min-width: 300px;
 }
+.big-li a {
+  font-weight: bolder;
+}
+.big-li hr {
+  background-color: #0E5AF2 !important;
+  height: 1px !important;
+}
 
 .big-li-inner-list {
   list-style: none;
@@ -1361,6 +1368,156 @@ a {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   margin-bottom: 0;
+}
+
+#faq {
+  position: relative;
+  padding: 240px 0 90px 0;
+}
+
+.faq-background-image-1 {
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/faq-bg-1-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  max-width: 945px;
+  max-height: 570px;
+  background-position: center;
+}
+
+.faq-background-image-2 {
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/faq-bg-1-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  line-height: 26px;
+  right: 0;
+  bottom: 0;
+  top: 120px;
+  height: 760px;
+  width: 100%;
+  max-width: 1120px;
+  border-radius: 5px;
+  z-index: -1;
+  background-position: center center !important;
+}
+
+.faq-img {
+  position: relative;
+}
+.faq-img .faq-img-1 {
+  margin-left: -144px;
+  position: relative;
+}
+.faq-img .faq-img-1 img {
+  width: 100%;
+}
+.faq-img .faq-img-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border-radius: 10px 0 0 0;
+  padding: 10px 0 0 10px;
+}
+.faq-img .faq-img-2 img {
+  width: 100%;
+}
+.faq-img .faq-img-2 .fa-play::before {
+  content: "\f04b";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 900 !important;
+  font-size: 18px;
+}
+.faq-img .faq-img-2 .img-2-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+.faq-img .faq-img-2 .img-2-button:hover {
+  background-color: black !important;
+}
+
+.faq-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+.faq-subtitle .fa-stop::before {
+  content: "\f04d";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Font Awesome 5 Pro" !important;
+  font-weight: 900;
+  font-size: 16px;
+  color: white;
+}
+
+.faq-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+
+.faq-accordion-item {
+  margin-bottom: 20px;
+  padding: 0 25px 0 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+.faq-accordion-btn {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 18px !important;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+}
+.faq-accordion-btn:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+.faq-accordion-btn::after {
+  background-image: url("/assets/img/iconmonstr-arrow-right-lined.svg") !important;
+  font-weight: bold !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: none !important;
+}
+
+.faq-accordion-body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.faq-accordion-body p {
+  color: #878D97 !important;
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media (max-width: 1500px) {
+  .faq-img-1 {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

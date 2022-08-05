@@ -1,5 +1,5 @@
 //mob-tablet screens cards service
-$('#owl-one').owlCarousel({
+$('#owl-services-mob').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
@@ -15,7 +15,7 @@ $('#owl-one').owlCarousel({
 
 
 //desktop screens team
-$('#owl-two').owlCarousel({
+$('#owl-team').owlCarousel({
     loop:true,
     margin:25,
     nav:false,
@@ -23,6 +23,9 @@ $('#owl-two').owlCarousel({
         0:{
             items: 1
         },
+        // 480:{
+        //     items: 1
+        // },
         768:{
             items: 2
         },

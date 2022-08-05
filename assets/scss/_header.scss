@@ -267,6 +267,13 @@
 .big-li {
     padding: 0 15px;
     min-width: 300px;
+    a {
+        font-weight: bolder;
+    }
+    hr {
+        background-color: #0E5AF2 !important;
+        height: 1px !important;
+    }
 }
 
 .big-li-inner-list{
