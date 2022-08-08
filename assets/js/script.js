@@ -23,10 +23,7 @@ $('#owl-team').owlCarousel({
         0:{
             items: 1
         },
-        // 480:{
-        //     items: 1
-        // },
-        768:{
+        460:{
             items: 2
         },
         992:{
