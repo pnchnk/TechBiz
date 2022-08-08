@@ -1480,6 +1480,13 @@ a {
   border-radius: 5px;
 }
 
+.faq-accordion-wrapper {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .faq-accordion-btn {
   padding-left: 0 !important;
   padding-right: 0 !important;

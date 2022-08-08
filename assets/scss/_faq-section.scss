@@ -117,6 +117,13 @@
 //     border-radius: 5px !important;
 // }
 
+.faq-accordion-wrapper{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 
 .faq-accordion-btn {
