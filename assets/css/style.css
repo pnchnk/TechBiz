@@ -1580,5 +1580,93 @@ a {
     border-radius: 10px !important;
   }
 }
+#company-skill {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.company-skill-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: blue;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+.company-skill-subtitle .fa-stop::before {
+  content: "\f04d";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Font Awesome 5 Pro" !important;
+  font-weight: 900;
+  font-size: 16px;
+  color: blue;
+}
+
+.company-skill-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  font-family: "Exo", sans-serif;
+}
+
+.company-skill-paragraph {
+  color: #878D97 !important;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.progress-bar-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 17px;
+  display: inline-block;
+}
+
+.progress-box-percent {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  display: block;
+  text-align: right;
+  float: right;
+}
+
+.progress {
+  padding: 4px !important;
+  background-color: white !important;
+  border-radius: 5px !important;
+  border: 1px solid #d5e0f5 !important;
+}
+
+@media (max-width: 991px) {
+  .company-skill-row {
+    flex-direction: column-reverse !important;
+  }
+}
+@media (max-width: 767px) {
+  #company-skill {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .company-skill-title {
+    font-size: 30px;
+  }
+
+  .company-skill-paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  #company-skill {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
