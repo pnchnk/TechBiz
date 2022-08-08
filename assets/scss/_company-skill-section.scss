@@ -63,10 +63,20 @@
     border: 1px solid #d5e0f5 !important;
 }
 
+.company-skill-img {
+    float: right;
+}
+
 @media (max-width:991px) {
+    #company-skill {
+        padding-top: 80px;
+    }
     .company-skill-row {
         flex-direction: column-reverse !important;
     } 
+    .company-skill-img {
+        float: unset;
+    }
 }
 
 @media (max-width:767px) {

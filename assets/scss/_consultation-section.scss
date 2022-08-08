@@ -1,0 +1,64 @@
+#consultation {
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/cta-bg-1-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+}
+
+.consultation-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    font-family: $font-exo;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.consultation-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    font-family: $font-exo;
+}
+
+.consultation-btn {
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+    font-family: $font-fira;
+    font-weight: 500 !important;
+    margin-top: 20px;   
+    background-color: blue !important;
+    color: white !important;  
+    border: none;
+    padding: 15px 30px !important;
+
+    .fa-arrow-right::before {
+        content: '\f061';
+        display: block;  
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 600 !important;       
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}
+
+
+@media (max-width:991px) {
+    #consultation {
+        padding: 80px 0 80px 0;
+    }
+
+    .consultation-title {
+        font-size: 36px !important;
+    }
+}
+
+@media (max-width:575px) {
+    .consultation-title {
+        font-size: 26px !important;
+    }
+}
