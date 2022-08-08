@@ -1,0 +1,121 @@
+#expert-team {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/process-bg-1-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.expert-team-card {
+    position: relative;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 0 20px !important;
+}
+
+.expert-team-card:nth-child(even) {
+    margin-top: 60px;
+}
+
+.expert-team-card:last-child .expert-team-card-arrow {
+    display: none;
+}
+
+.expert-team-card:nth-child(even) .expert-team-card-arrow {
+    transform: rotateX(180deg);
+}
+
+.expert-team-card-arrow {
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.expert-team-card-icon {
+    position: relative !important;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    margin: 0 auto 30px auto !important;
+}
+
+.expert-team__number {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 26px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid white;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: $font-exo;
+}
+
+.expert-team-card-title {
+    font-family: $font-exo;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.expert-team-card-paragraph {
+    margin-bottom: 15px;
+    color: #878D97;
+    font-family: $font-fira;
+    font-weight: 400;
+}
+
+@media (max-width:1199px) {
+    .expert-team-card:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .expert-team-card {
+        padding: 0 5px !important;
+    }
+
+    .expert-team-card-arrow {
+        right: -40px;
+        top: 25px;
+        img {
+            width: 80px;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    #expert-team {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        
+    }
+    .expert-team-card-arrow {
+        display: none !important;
+    }
+
+    .expert-team-card {
+        padding: 0 15px !important;
+    }
+}
+
+@media (max-width:575px) {
+    .expert-team-card-title {
+        font-size: 18px;
+    }
+    .expert-team-card-paragraph {
+        font-size: 14px;
+    }
+}

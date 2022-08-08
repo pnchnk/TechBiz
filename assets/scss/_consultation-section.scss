@@ -35,6 +35,10 @@
     color: white !important;  
     border: none;
     padding: 15px 30px !important;
+    transition: all ease 0.4s !important;
+    &:hover {
+        background-color: black !important;
+    }
 
     .fa-arrow-right::before {
         content: '\f061';
