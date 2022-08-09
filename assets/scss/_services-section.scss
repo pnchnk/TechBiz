@@ -13,6 +13,8 @@
     font-family: $font-fira;
     border: none !important;
     width: 95%;
+    user-select: none;
+    -webkit-user-select: none;
 
     img {
         width: 70px !important;

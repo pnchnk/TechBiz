@@ -1,0 +1,56 @@
+#feedback {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.feedback-card {
+    background-color: #f8f8f9;
+    padding: 35px 40px 35px 40px;
+    margin: 15px 0 30px 0;
+    border-radius: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+
+    p {
+        margin-bottom: 24px;
+        color: #878D97;
+        font-family: $font-fira;
+    }
+}
+
+.feedback-card-icon {
+    margin: -45px 0 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    width: fit-content;   
+}
+
+.fa-quote-right:before {
+    content: "\f10e" ;
+    display: block;
+    font-family: "Font Awesome 6 Free";
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    font-size: 24px;
+    border-radius: inherit;
+    background-color: blue;
+    text-align: center;
+    font-weight: 700!important;
+}
+
+.feedback-card-person {
+    .person-name {
+        font-size: 20px;
+        font-family: $font-exo;
+        font-weight: 700;
+    }
+
+    .person-position {
+        font-size: 14px;
+        color: #0E5AF2;
+        font-family: $font-fira;
+        font-weight: 400;
+    }
+}
