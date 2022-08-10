@@ -1,0 +1,31 @@
+#clients {
+    padding-bottom: 100px;
+}
+
+.clients-line-title {
+    margin-bottom: 80px;
+}
+
+.title-line {
+    background-color: blue;
+    height: 2px;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.clients-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $font-exo;
+    margin: auto;
+}
+
+#owl-clients {
+    display: block;
+}
+
+.owl-carousel .owl-item img {
+    width: fit-content !important;
+    margin: auto !important;
+}

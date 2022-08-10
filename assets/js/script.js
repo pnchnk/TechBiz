@@ -53,6 +53,23 @@ $('#owl-feedback').owlCarousel({
     }
 });
 
+$('#owl-clients').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:false,
+    responsive:{
+        0:{
+            items: 2
+        },
+        762:{
+            items: 3
+        },
+        1200: {
+            items: 5
+        }
+    }
+});
+
 
 
    

@@ -1092,6 +1092,11 @@ a {
     padding-bottom: 40px;
   }
 }
+@media (max-width: 767px) {
+  .offer-title-h2 {
+    font-size: 30px !important;
+  }
+}
 @media (max-width: 575px) {
   #offer {
     padding-bottom: 20px;
@@ -1352,6 +1357,11 @@ a {
   margin-bottom: 0;
 }
 
+@media (max-width: 1199px) {
+  .team-title {
+    padding-top: 60px;
+  }
+}
 #faq {
   position: relative;
   padding: 240px 0 90px 0;
@@ -1462,11 +1472,17 @@ a {
   border-radius: 5px;
 }
 
+.accordion-header {
+  border-radius: 5px !important;
+  width: 100%;
+}
+
 .faq-accordion-wrapper {
   height: 100%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 50%;
 }
 
 .faq-accordion-btn {
@@ -1475,6 +1491,7 @@ a {
   font-size: 18px !important;
   font-family: "Exo", sans-serif;
   font-weight: 600;
+  border-radius: 5px;
 }
 .faq-accordion-btn:focus {
   border: none !important;
@@ -1530,6 +1547,9 @@ a {
     padding: 10px !important;
     border-radius: 10px !important;
   }
+  .faq-accordion-wrapper {
+    width: 47%;
+  }
   .faq-accordion-btn {
     font-size: 16px !important;
   }
@@ -1539,13 +1559,23 @@ a {
 }
 @media (max-width: 991px) {
   #faq {
-    padding-bottom: 50px;
+    padding-bottom: 600px;
   }
   .faq-background-image-2 {
     max-width: 100% !important;
   }
+  .faq-accordion-wrapper {
+    height: auto;
+    position: absolute;
+    top: 110%;
+    transform: none !important;
+    width: 90%;
+  }
 }
 @media (max-width: 767px) {
+  #faq {
+    padding-bottom: 560px;
+  }
   .faq-subtitle {
     font-size: 16px !important;
   }
@@ -1558,6 +1588,18 @@ a {
     width: 100% !important;
     padding: 10px !important;
     border-radius: 10px !important;
+  }
+  .faq-accordion-wrapper {
+    height: auto;
+    position: absolute;
+    top: 110%;
+    transform: none !important;
+    width: 90%;
+  }
+}
+@media (max-width: 575px) {
+  #faq {
+    padding-bottom: 700px;
   }
 }
 #company-skill {
@@ -1850,6 +1892,8 @@ a {
   user-select: none;
   -webkit-user-select: none;
   transition: all ease 0.3s;
+  min-height: 290px;
+  height: fit-content;
 }
 .feedback-card:hover {
   background-color: white;
@@ -1949,6 +1993,37 @@ a {
   .feedback-prev, .feedback-next {
     left: 670px;
   }
+}
+#clients {
+  padding-bottom: 100px;
+}
+
+.clients-line-title {
+  margin-bottom: 80px;
+}
+
+.title-line {
+  background-color: blue;
+  height: 2px;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.clients-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  margin: auto;
+}
+
+#owl-clients {
+  display: block;
+}
+
+.owl-carousel .owl-item img {
+  width: fit-content !important;
+  margin: auto !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -135,6 +135,12 @@
     }
 }
 
+@media (max-width:767px) {
+    .offer-title-h2 {
+        font-size: 30px !important;
+    }
+}
+
 @media (max-width: 575px) {
     #offer {
         padding-bottom: 20px;

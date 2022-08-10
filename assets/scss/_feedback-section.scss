@@ -12,6 +12,8 @@
     user-select: none;
     -webkit-user-select: none;
     transition: all ease 0.3s;
+    min-height: 290px;
+    height: fit-content;
     &:hover {      
             background-color: white;
             box-shadow: 0px 10px 31px rgb(169 177 193 / 17%)
