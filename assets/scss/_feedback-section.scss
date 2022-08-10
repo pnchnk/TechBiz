@@ -1,6 +1,6 @@
 #feedback {
     padding-top: 120px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
 }
 
 .feedback-card {
@@ -8,8 +8,14 @@
     padding: 35px 40px 35px 40px;
     margin: 15px 0 30px 0;
     border-radius: 5px;
+    min-height: fit-content;
     user-select: none;
     -webkit-user-select: none;
+    transition: all ease 0.3s;
+    &:hover {      
+            background-color: white;
+            box-shadow: 0px 10px 31px rgb(169 177 193 / 17%)
+    }
 
     p {
         margin-bottom: 24px;
@@ -19,10 +25,11 @@
 }
 
 .feedback-card-icon {
-    margin: -45px 0 20px 0;
+    margin: -55px 0 20px 0;
     background-color: white;
     border-radius: 5px;
     width: fit-content;   
+    padding: 10px;
 }
 
 .fa-quote-right:before {
@@ -34,8 +41,8 @@
     line-height: 60px;
     color: white;
     font-size: 24px;
-    border-radius: inherit;
-    background-color: blue;
+    border-radius: 5px;
+    background-color: #0E5AF2;
     text-align: center;
     font-weight: 700!important;
 }
@@ -52,5 +59,67 @@
         color: #0E5AF2;
         font-family: $font-fira;
         font-weight: 400;
+    }
+}
+
+.feedback-prev, .feedback-next {
+    
+        text-transform: uppercase !important;
+        font-size: 16px !important;
+        font-family: $font-fira;
+        font-weight: 500 !important;
+        padding: 12px 30.5px !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
+        outline: 0 !important;
+        background-color: #EFF1F5 !important;
+        color: #0E5AF2 !important;
+        z-index: 5 !important;
+        position: relative !important;
+        margin-left: 10px;
+        position: absolute;
+        top: -400px;
+        left: 1030px;
+        &:hover {
+            color: white !important;
+            background-color: black !important;   
+        
+    }
+}
+
+.feedback-prev {
+    .fa-arrow-left::before {
+        content: '\f060';
+        text-align: center;
+        font-weight: 700!important;
+        font-family: "Font Awesome 6 Free";
+        margin-right: 4px;
+    }
+}
+
+.feedback-next {
+    .fa-arrow-right::before {
+        content: '\f061';
+        text-align: center;
+        font-weight: 700!important;
+        font-family: "Font Awesome 6 Free";
+        margin-left: 4px;
+    }
+}
+
+@media (max-width:1399px) {
+    #feedback {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    .feedback-prev, .feedback-next {
+        top: -450px;
+        left: 850px;
+    }
+}
+
+@media (max-width:1199px) {
+    .feedback-prev, .feedback-next {
+        left: 670px;
     }
 }

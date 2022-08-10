@@ -38,7 +38,8 @@ $('#owl-team').owlCarousel({
 $('#owl-feedback').owlCarousel({
     loop:true,
     margin:25,
-    nav:false,
+    nav:true,
+    navText : ['<span class="feedback-prev btn d-none d-lg-block"><i class="far fa-arrow-left"></i>prev</span>','<span class="feedback-next btn d-none d-lg-block">next<i class="far fa-arrow-right"></i></span>'],
     responsive:{
         0:{
             items: 1
@@ -52,18 +53,7 @@ $('#owl-feedback').owlCarousel({
     }
 });
 
-const $owlNext = document.querySelector('.owl-next');
-const $owlPrev = document.querySelector('.owl-prev');
 
-//  $('.owl-next').click(function() {
-//         owl.trigger('next.owl.carousel');
-//     })
-//     // Go to the previous item
-//     $('.owl-prev').click(function() {
-//         // With optional speed parameter
-//         // Parameters has to be in square bracket '[]'
-//         owl.trigger('prev.owl.carousel', [300]);
-//     })
 
    
     
