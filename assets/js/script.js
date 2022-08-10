@@ -35,6 +35,7 @@ $('#owl-team').owlCarousel({
     }
 });
 
+//feedback-section
 $('#owl-feedback').owlCarousel({
     loop:true,
     margin:25,
@@ -44,7 +45,7 @@ $('#owl-feedback').owlCarousel({
         0:{
             items: 1
         },
-        460:{
+        767:{
             items: 2
         },
         1200: {
@@ -59,13 +60,31 @@ $('#owl-clients').owlCarousel({
     nav:false,
     responsive:{
         0:{
-            items: 2
+            items: 2,
+            margin: 15
         },
         762:{
             items: 3
         },
         1200: {
             items: 5
+        }
+    }
+});
+
+$('#owl-blog').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        763:{
+            items: 2
+        },
+        1200: {
+            items: 3
         }
     }
 });

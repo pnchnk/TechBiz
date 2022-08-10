@@ -80,7 +80,7 @@
         position: relative !important;
         margin-left: 10px;
         position: absolute;
-        top: -400px;
+        top: -430px;
         left: 1030px;
         &:hover {
             color: white !important;
@@ -123,5 +123,12 @@
 @media (max-width:1199px) {
     .feedback-prev, .feedback-next {
         left: 670px;
+    }
+}
+
+@media (max-width:767px) {
+    #feedback {
+        padding-top: 100px;
+        padding-bottom: 30px;
     }
 }
