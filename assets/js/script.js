@@ -89,7 +89,26 @@ $('#owl-blog').owlCarousel({
     }
 });
 
-
-
-   
     
+
+// let lastScroll = 0;
+// const defaultOffset = 800;
+// const header = document.querySelector('#js-header-dropdown');
+ 
+// const scrollPosition = () => window.pageYOffset ;
+// const containHide = () => header.classList.contains('header-fixed');
+ 
+// window.addEventListener('scroll', () => {
+//     if(scrollPosition() > lastScroll  && scrollPosition() > defaultOffset) {
+//         //scroll down
+//         header.classList.add('header-fixed');
+//         // header.classList.remove('header-fixed');
+//     }
+//     else if(scrollPosition() < lastScroll && containHide()){
+//         //scroll up
+//         header.classList.remove('header-fixed');   
+//         // header.classList.add('header-fixed');  
+//     }
+ 
+//     lastScroll = scrollPosition();
+// })
