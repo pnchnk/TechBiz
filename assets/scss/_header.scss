@@ -101,6 +101,18 @@
     color: black;
 }
 
+.header-top-hours {
+    color: white;
+    font-family: $font-fira;
+    font-weight: 400;
+    margin-bottom: 0;
+
+    .fa-clock:before {
+        content: "\f017";
+        font-size: 16px !important;
+    }
+}
+
 
 //middle part of header
 

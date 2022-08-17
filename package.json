@@ -23,6 +23,7 @@
   "homepage": "https://github.com/pnchnk/TechBiz#readme",
   "dependencies": {
     "jquery": "^3.6.0",
+    "modal-video": "^2.4.8",
     "owl.carousel": "^2.3.4"
   },
   "devDependencies": {

@@ -61,6 +61,8 @@
 
 .footer-top-info-description {
     line-height: 26px;
+    margin-left: 0 ;
+    text-align: left !important;
 }
 
 .info-description-label {
@@ -75,6 +77,12 @@
     max-width: 190px;
     color: #8a99b4;
     font-size: 14px;
+    
+    a {
+        max-width: 190px;
+        color: #8a99b4;
+        font-size: 14px;
+    }
 }
 
 .footer-bot {
@@ -178,7 +186,7 @@
 
 
 //adaptive 
-@media (max-width: 1999px) {
+@media (max-width: 1399px) {
     .footer-top-info-icon {
         margin: auto;
         margin-bottom: 20px;
@@ -187,10 +195,14 @@
 
     .footer-top-info-description {
         text-align: center !important;
+     
     }
 }
 
 @media (max-width:991px) {
+    .footer-top-group {
+        border: none;
+    }
     .info-about-text {
         max-width: 100%;
     }

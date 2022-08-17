@@ -111,12 +111,13 @@
     padding: 0 25px 0 25px;
     border: none;
     border-radius: 5px;
+
+    .accordion-header {
+        border-radius: 5px !important;
+        width: 100%;
+    }
 }
 
-.accordion-header {
-    border-radius: 5px !important;
-    width: 100%;
-}
 
 .faq-accordion-wrapper{
     height: 100%;
@@ -135,26 +136,35 @@
     font-family: $font-exo;
     font-weight: 600;
     border-radius: 5px;
+    justify-content: space-between !important;
+
+    .fa-arrow-right {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+    }
 
     &:focus {
-        border: none !important;
+        // border: none !important;
         box-shadow: none !important;
     }
 
     &::after {
-        background-image: url('/assets/img/iconmonstr-arrow-right-lined.svg') !important;
-        font-weight: bold !important;
+       display: none !important;
     }
+
 }
 
-.accordion-button:not(.collapsed) {
+.faq-accordion-btn:not(.collapsed) {
     color: black !important;
     background-color: transparent !important;
 }
 
-.accordion-button:not(.collapsed)::after {
+.faq-accordion-btn:not(.collapsed)::after {
     transform: none !important;
+    display: none !important;
 }
+
+
 
 .faq-accordion-body {
     padding-left: 0 !important;

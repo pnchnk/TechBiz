@@ -1,0 +1,50 @@
+#details {
+    position: relative;
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/breadcumb/breadcumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 135px;
+}
+
+
+
+.details-title {
+    color: white;
+    font-family: $font-exo;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.details-span {
+    font-family: $font-exo;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+
+        }
+    }
+}
+
+@media (max-width:991px) {
+    #details {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .details-row {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:767px) {
+    .details-title {
+        font-size: 36px;     
+    }
+}

@@ -1,0 +1,305 @@
+#info {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.info-sidebar-services {
+
+    ul {
+        
+        list-style-type: none;
+        padding: 0;
+
+        li a {
+            color: #878D97;
+            font-size: 16px;
+            font-weight: 400;
+            border-bottom: 1px solid #dadfec;
+            display: block;
+            margin-bottom: 18px;
+            padding-bottom: 17px;
+            font-family: $font-fira;
+            &:hover {
+                color: #0E5AF2;
+            }
+
+            .fa-arrow-right {
+                display: inline;
+                float: right;
+                font-family: "Font Awesome 6 Free";
+                font-weight: 600 !important;
+            }
+
+            .fa-arrow-right::before {
+                content: '\f061';
+                font-size: 18px;
+            }
+        }
+        li:last-child a {
+            border: none;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.sidebar-title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $font-exo;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+
+.sidebar {
+    padding: 40px;
+    position: relative;
+    margin-bottom: 40px;
+    background-color: #EFF1F5;
+}
+
+.info-sidebar-workhours-list {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li:last-child {
+        color: #0E5AF2;
+        .fa-clock:before {
+            color: #0E5AF2;
+        }
+    }
+    li {
+        background-color: white;
+        padding: 14.5px 20px;
+        margin-bottom: 15px;
+        font-family: $font-exo;
+        font-weight: 500;
+        color: #878D97;
+
+        .fa-clock {
+            font-weight: 300;
+            font-family:"Font Awesome 6 Free";
+            margin-right: 10px;
+        }
+
+        .fa-clock:before {
+            content: "\f017";
+            color: #878D97;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+.info-sidebar-quote {
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/widget/quote-box.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    padding: 80px 30px;
+    margin-bottom: 30px;
+
+    .quote-title {
+        color: white;
+        position: relative;
+        z-index: 1;
+        max-width: 200px;
+        margin: 0 auto 25px auto;
+        font-size: 36px;
+        font-family: $font-exo;
+        font-weight: 700;
+    } 
+
+    .quote-btn {
+        font-size: 16px !important;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 500 !important;
+        padding: 15px 30.5px !important;
+        transition: all color 0.3s ease !important;
+        border: none !important;
+        outline: 0 !important;
+        background-color: #0E5AF2 !important;
+        color: white !important;
+        z-index: 5 !important;
+        position: relative !important;
+        text-transform: uppercase;
+        &:hover {
+            background-color: black !important;
+        }
+
+        .fa-arrow-right {
+            margin-left: 8px;
+            font-family: "Font Awesome 6 Free";
+            font-weight: 600 !important;
+
+        }
+
+        .fa-arrow-right::before {
+            content: '\f061';
+            font-size: 16px;
+        }
+    }
+}
+
+.info-sidebar-quote:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7,26,62,.7);
+}
+
+.info-title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: $font-exo;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.info-paragraph {
+    color: #878D97;
+}
+
+.info-service-box {
+    padding: 35px 40px;
+    background-color: #EFF1F5;
+    height: 100%;
+
+    .service-box-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $font-exo;
+        margin-bottom: 35px;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+}
+
+.info-service-box-list {
+    margin-top: 30px;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 8px;
+        color: #878D97;
+        font-weight: 400;
+
+        .fa-check-circle {
+            margin-right: 10px;
+            font-family: "Font Awesome 6 Free";
+            color: #0E5AF2;
+            font-weight: lighter;
+        }
+
+        .fa-check-circle:before {
+            content: "\f058";
+        }
+    }
+
+}
+
+.info-title2 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $font-exo;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.service-accordion-item {
+    margin-bottom: 20px;
+    padding: 0 ;
+    border: none !important;
+    background-color: #EFF1F5 !important;
+    border-radius: 5px;
+
+    .service-accordion-header {
+        // border-radius: 5px !important;
+        width: 100%;
+        background-color: #EFF1F5 !important;
+    }
+}
+
+
+// .service-accordion-wrapper{
+//     height: 100%;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     width: 50%;
+// }
+
+
+
+.service-accordion-btn {
+    // padding-left: 0 !important;
+    // padding-right: 0 !important;
+    font-size: 18px !important;
+    font-family: $font-exo;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none !important;
+    background-color: #EFF1F5 !important;
+    justify-content: space-between !important;
+
+    .fa-arrow-right {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+    }
+
+    &:focus {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    &::after {
+        display: none !important;
+    }
+
+}
+
+.service-accordion-btn:not(.collapsed) {
+    color: white !important;
+    background-color: #0E5AF2 !important;
+}
+
+.service-accordion-btn:not(.collapsed)::after {
+    transform: none !important;
+    display: none !important;
+}
+
+
+
+.service-accordion-body {
+    padding: 25px 25px 23px 25px;
+    p {
+        color: #878D97 !important;
+        font-family: $font-fira;
+    }
+}
+
+@media (max-width:991px) {
+    #info {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:575px) {
+    #info {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+}

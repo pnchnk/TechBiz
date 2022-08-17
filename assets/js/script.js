@@ -89,7 +89,9 @@ $('#owl-blog').owlCarousel({
     }
 });
 
-    
+new ModalVideo('#services-modal-btn', {url: 'https://youtu.be/liJVSwOiiwg'});
+
+new ModalVideo('#faq-modal-video', {url: 'https://youtu.be/liJVSwOiiwg'});
 
 // let lastScroll = 0;
 // const defaultOffset = 800;

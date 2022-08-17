@@ -2,6 +2,14 @@ a {
   text-decoration: none !important;
 }
 
+body {
+  font-family: "Fira Sans", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Exo", sans-serif !important;
+}
+
 .header-top {
   font-family: "Fira Sans", sans-serif;
   background-color: #0e5af2;
@@ -92,6 +100,17 @@ a {
 
 .header-top-links a:hover .fa-twitter::before {
   color: black;
+}
+
+.header-top-hours {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.header-top-hours .fa-clock:before {
+  content: "\f017";
+  font-size: 16px !important;
 }
 
 .header-middle-info {
@@ -434,6 +453,8 @@ a {
 
 .footer-top-info-description {
   line-height: 26px;
+  margin-left: 0;
+  text-align: left !important;
 }
 
 .info-description-label {
@@ -445,6 +466,11 @@ a {
 }
 
 .info-description-text {
+  max-width: 190px;
+  color: #8a99b4;
+  font-size: 14px;
+}
+.info-description-text a {
   max-width: 190px;
   color: #8a99b4;
   font-size: 14px;
@@ -541,7 +567,7 @@ a {
   font-weight: 300;
 }
 
-@media (max-width: 1999px) {
+@media (max-width: 1399px) {
   .footer-top-info-icon {
     margin: auto;
     margin-bottom: 20px;
@@ -552,6 +578,9 @@ a {
   }
 }
 @media (max-width: 991px) {
+  .footer-top-group {
+    border: none;
+  }
   .info-about-text {
     max-width: 100%;
   }
@@ -752,7 +781,7 @@ a {
   width: 70px !important;
   height: 70px !important;
 }
-.services-card button {
+.services-card a {
   text-transform: uppercase !important;
   font-size: 16px !important;
   font-family: "Fira Sans", sans-serif;
@@ -1489,8 +1518,7 @@ a {
   border: none;
   border-radius: 5px;
 }
-
-.accordion-header {
+.faq-accordion-item .accordion-header {
   border-radius: 5px !important;
   width: 100%;
 }
@@ -1510,23 +1538,27 @@ a {
   font-family: "Exo", sans-serif;
   font-weight: 600;
   border-radius: 5px;
+  justify-content: space-between !important;
+}
+.faq-accordion-btn .fa-arrow-right {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
 }
 .faq-accordion-btn:focus {
-  border: none !important;
   box-shadow: none !important;
 }
 .faq-accordion-btn::after {
-  background-image: url("/assets/img/iconmonstr-arrow-right-lined.svg") !important;
-  font-weight: bold !important;
+  display: none !important;
 }
 
-.accordion-button:not(.collapsed) {
+.faq-accordion-btn:not(.collapsed) {
   color: black !important;
   background-color: transparent !important;
 }
 
-.accordion-button:not(.collapsed)::after {
+.faq-accordion-btn:not(.collapsed)::after {
   transform: none !important;
+  display: none !important;
 }
 
 .faq-accordion-body {
@@ -2216,6 +2248,311 @@ a {
 @media (max-width: 767px) {
   .blog-title {
     font-size: 36px;
+  }
+}
+#details {
+  position: relative;
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/breadcumb/breadcumb-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 140px;
+  padding-bottom: 135px;
+}
+
+.details-title {
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.details-span {
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+.details-span a {
+  color: white;
+  text-decoration: none;
+}
+.details-span a:hover {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  #details {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .details-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .details-title {
+    font-size: 36px;
+  }
+}
+#info {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.info-sidebar-services ul {
+  list-style-type: none;
+  padding: 0;
+}
+.info-sidebar-services ul li a {
+  color: #878D97;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #dadfec;
+  display: block;
+  margin-bottom: 18px;
+  padding-bottom: 17px;
+  font-family: "Fira Sans", sans-serif;
+}
+.info-sidebar-services ul li a:hover {
+  color: #0E5AF2;
+}
+.info-sidebar-services ul li a .fa-arrow-right {
+  display: inline;
+  float: right;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600 !important;
+}
+.info-sidebar-services ul li a .fa-arrow-right::before {
+  content: "\f061";
+  font-size: 18px;
+}
+.info-sidebar-services ul li:last-child a {
+  border: none;
+  margin-bottom: 0;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+}
+
+.sidebar {
+  padding: 40px;
+  position: relative;
+  margin-bottom: 40px;
+  background-color: #EFF1F5;
+}
+
+.info-sidebar-workhours-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.info-sidebar-workhours-list li:last-child {
+  color: #0E5AF2;
+}
+.info-sidebar-workhours-list li:last-child .fa-clock:before {
+  color: #0E5AF2;
+}
+.info-sidebar-workhours-list li {
+  background-color: white;
+  padding: 14.5px 20px;
+  margin-bottom: 15px;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  color: #878D97;
+}
+.info-sidebar-workhours-list li .fa-clock {
+  font-weight: 300;
+  font-family: "Font Awesome 6 Free";
+  margin-right: 10px;
+}
+.info-sidebar-workhours-list li .fa-clock:before {
+  content: "\f017";
+  color: #878D97;
+  font-size: 16px;
+}
+
+.info-sidebar-quote {
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/widget/quote-box.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  text-align: center;
+  padding: 80px 30px;
+  margin-bottom: 30px;
+}
+.info-sidebar-quote .quote-title {
+  color: white;
+  position: relative;
+  z-index: 1;
+  max-width: 200px;
+  margin: 0 auto 25px auto;
+  font-size: 36px;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+}
+.info-sidebar-quote .quote-btn {
+  font-size: 16px !important;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500 !important;
+  padding: 15px 30.5px !important;
+  transition: all color 0.3s ease !important;
+  border: none !important;
+  outline: 0 !important;
+  background-color: #0E5AF2 !important;
+  color: white !important;
+  z-index: 5 !important;
+  position: relative !important;
+  text-transform: uppercase;
+}
+.info-sidebar-quote .quote-btn:hover {
+  background-color: black !important;
+}
+.info-sidebar-quote .quote-btn .fa-arrow-right {
+  margin-left: 8px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600 !important;
+}
+.info-sidebar-quote .quote-btn .fa-arrow-right::before {
+  content: "\f061";
+  font-size: 16px;
+}
+
+.info-sidebar-quote:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 26, 62, 0.7);
+}
+
+.info-title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.info-paragraph {
+  color: #878D97;
+}
+
+.info-service-box {
+  padding: 35px 40px;
+  background-color: #EFF1F5;
+  height: 100%;
+}
+.info-service-box .service-box-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.info-service-box-list {
+  margin-top: 30px;
+}
+.info-service-box-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.info-service-box-list li {
+  margin-bottom: 8px;
+  color: #878D97;
+  font-weight: 400;
+}
+.info-service-box-list li .fa-check-circle {
+  margin-right: 10px;
+  font-family: "Font Awesome 6 Free";
+  color: #0E5AF2;
+  font-weight: lighter;
+}
+.info-service-box-list li .fa-check-circle:before {
+  content: "\f058";
+}
+
+.info-title2 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.service-accordion-item {
+  margin-bottom: 20px;
+  padding: 0;
+  border: none !important;
+  background-color: #EFF1F5 !important;
+  border-radius: 5px;
+}
+.service-accordion-item .service-accordion-header {
+  width: 100%;
+  background-color: #EFF1F5 !important;
+}
+
+.service-accordion-btn {
+  font-size: 18px !important;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none !important;
+  background-color: #EFF1F5 !important;
+  justify-content: space-between !important;
+}
+.service-accordion-btn .fa-arrow-right {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+}
+.service-accordion-btn:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+.service-accordion-btn::after {
+  display: none !important;
+}
+
+.service-accordion-btn:not(.collapsed) {
+  color: white !important;
+  background-color: #0E5AF2 !important;
+}
+
+.service-accordion-btn:not(.collapsed)::after {
+  transform: none !important;
+  display: none !important;
+}
+
+.service-accordion-body {
+  padding: 25px 25px 23px 25px;
+}
+.service-accordion-body p {
+  color: #878D97 !important;
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media (max-width: 991px) {
+  #info {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 575px) {
+  #info {
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
 }
 
