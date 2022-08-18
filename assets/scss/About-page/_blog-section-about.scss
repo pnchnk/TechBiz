@@ -1,0 +1,120 @@
+#about-blog {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.blog-title-span {
+    color: #0E5AF2;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $font-exo;
+    margin: 0 0 20px 0;
+    display: block;
+}
+
+.blog-title {
+    font-size: 48px;
+    font-family: $font-exo;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.blog-card {
+    border: none !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    background-color: white !important;
+    box-shadow: 0px 16px 35px rgba(147, 153, 167, 0.07);
+    border-radius: 5px;
+}
+
+.blog-card-content {
+    padding: 35px 40px 25px 40px;
+}
+.blog-card-date a {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #8b919c;
+    font-family: $font-fira;
+}
+
+.blog-card-date a:last-child {
+    margin-right: 0;
+}
+
+.fa-calendar::before {
+    content: '\f133';
+    display: block;
+    font-family: "Font Awesome 6 Free";
+    color: #0E5AF2;
+    font-size: 16px;
+    font-weight: 300!important;
+}
+
+.fa-user::before {
+    content: '\f007';
+    display: block;
+    font-family: "Font Awesome 6 Free";
+    color: #0E5AF2;
+    font-size: 16px;
+    font-weight: 300!important;
+}
+
+.blog-card-body {
+    padding: 10px 0 10px 0 !important;
+
+    h5 {
+        font-size: 24px;
+        font-family: $font-exo;
+        font-weight: 700;
+    }
+}
+
+.blog-card-btn {
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+    font-family: $font-fira;
+    font-weight: 500 !important;
+    margin-top: 20px;   
+    background-color: transparent !important;
+    color: #0E5AF2 !important;  
+    border: none !important;
+    padding: 0  !important;
+    transition: all ease 0.4s !important;
+    outline: none !important;
+    transition: all ease 0.4s !important;
+    &:hover {
+        text-decoration: underline !important;
+    }
+
+    .fa-arrow-right::before {
+        content: '\f061';
+        display: block;  
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+        font-weight: 600 !important;       
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}
+
+#owl-blog .owl-item img {
+    width: unset;
+}
+
+@media (max-width:1399px) {
+    #blog {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+    .card-title {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .blog-title {
+        font-size: 36px;
+    }
+}

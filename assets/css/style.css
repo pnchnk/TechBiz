@@ -777,6 +777,9 @@ h1, h2, h3, h4, h5, h6 {
   user-select: none;
   -webkit-user-select: none;
 }
+.services-card .card-title {
+  font-weight: bolder !important;
+}
 .services-card img {
   width: 70px !important;
   height: 70px !important;
@@ -2554,6 +2557,316 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 40px;
     padding-bottom: 10px;
   }
+}
+#service {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.service-card {
+  position: relative;
+  padding: 40px;
+  border: 1px solid #ecf0f6;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background-color: white;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.service-card:hover {
+  background-color: #0E5AF2;
+}
+.service-card:hover .service-card-bg-img {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  z-index: 1;
+}
+.service-card:hover .service-card-img {
+  background-color: white !important;
+  display: block;
+}
+.service-card:hover p, .service-card:hover .service-card-h3 a {
+  color: white;
+  z-index: 3;
+}
+.service-card:hover .service-btn {
+  color: white !important;
+}
+.service-card p {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  color: #878D97;
+  position: relative;
+}
+.service-card .service-card-bg-img {
+  opacity: 0;
+  visibility: hidden;
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/sr-box-bg-1.jpg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: all ease 0.4s;
+  z-index: -1;
+}
+.service-card .service-card-img {
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #EFF1F5;
+  margin-bottom: 28px;
+  z-index: 1 !important;
+  position: relative;
+}
+.service-card .service-card-img img {
+  display: inline !important;
+  width: fit-content !important;
+  z-index: 10;
+}
+.service-card .service-card-img .service-card-number {
+  line-height: 1;
+  color: rgba(14, 89, 242, 0.1);
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Exo", sans-serif;
+  margin-top: 4px;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  left: 300%;
+}
+.service-card .service-card-h3 {
+  font-size: 24px;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+  z-index: 5;
+  position: relative;
+}
+.service-card .service-card-h3 a {
+  color: black;
+}
+.service-card .service-btn {
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500 !important;
+  padding: 12px 0.5px !important;
+  transition: all color 0.3s ease !important;
+  border: none !important;
+  outline: 0 !important;
+  background-color: transparent !important;
+  color: #0E5AF2 !important;
+  z-index: 5 !important;
+  position: relative !important;
+}
+.service-card .service-btn .fa-arrow-right::before {
+  content: "\f061";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 800 !important;
+  font-size: 14px;
+}
+
+#about-blog {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.blog-title-span {
+  color: #0E5AF2;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Exo", sans-serif;
+  margin: 0 0 20px 0;
+  display: block;
+}
+
+.blog-title {
+  font-size: 48px;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.blog-card {
+  border: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  background-color: white !important;
+  box-shadow: 0px 16px 35px rgba(147, 153, 167, 0.07);
+  border-radius: 5px;
+}
+
+.blog-card-content {
+  padding: 35px 40px 25px 40px;
+}
+
+.blog-card-date a {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #8b919c;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.blog-card-date a:last-child {
+  margin-right: 0;
+}
+
+.fa-calendar::before {
+  content: "\f133";
+  display: block;
+  font-family: "Font Awesome 6 Free";
+  color: #0E5AF2;
+  font-size: 16px;
+  font-weight: 300 !important;
+}
+
+.fa-user::before {
+  content: "\f007";
+  display: block;
+  font-family: "Font Awesome 6 Free";
+  color: #0E5AF2;
+  font-size: 16px;
+  font-weight: 300 !important;
+}
+
+.blog-card-body {
+  padding: 10px 0 10px 0 !important;
+}
+.blog-card-body h5 {
+  font-size: 24px;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+}
+
+.blog-card-btn {
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500 !important;
+  margin-top: 20px;
+  background-color: transparent !important;
+  color: #0E5AF2 !important;
+  border: none !important;
+  padding: 0 !important;
+  transition: all ease 0.4s !important;
+  outline: none !important;
+  transition: all ease 0.4s !important;
+}
+.blog-card-btn:hover {
+  text-decoration: underline !important;
+}
+.blog-card-btn .fa-arrow-right::before {
+  content: "\f061";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+  font-weight: 600 !important;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#owl-blog .owl-item img {
+  width: unset;
+}
+
+@media (max-width: 1399px) {
+  #blog {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+  .card-title {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 767px) {
+  .blog-title {
+    font-size: 36px;
+  }
+}
+#about-founder {
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/about-bg-5-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.about-founder-info-subtitle {
+  text-transform: uppercase;
+  display: block;
+  color: #0E5AF2;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 23px 0;
+}
+
+.about-founder-info-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about-founder-info-p {
+  margin-bottom: 18px;
+  color: #878D97;
+}
+
+.info-call {
+  padding-right: 80px;
+  border-right: #0E5AF2 2px solid;
+}
+.info-call .info-call-icon {
+  background-color: white;
+  color: var(--theme-color);
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.info-call .info-call-icon .fa-phone-alt {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 600;
+  transform: rotateY(180deg);
+  color: #0E5AF2;
+}
+.info-call .info-call-tel .info-call-tel-label {
+  font-size: 14px;
+}
+.info-call .info-call-tel .info-call-tel-number {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 0;
+}
+.info-call .info-call-tel .info-call-tel-number a {
+  color: #0E5AF2;
+}
+.info-call .info-call-tel .info-call-tel-number a:hover {
+  color: black;
+}
+
+.author-post {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #878D97;
+}
+
+.author-name {
+  font-family: "Exo", sans-serif;
+  color: black;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

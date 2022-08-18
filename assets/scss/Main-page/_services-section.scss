@@ -16,6 +16,10 @@
     user-select: none;
     -webkit-user-select: none;
 
+    .card-title {
+        font-weight: bolder !important;
+    }
+
     img {
         width: 70px !important;
         height: 70px !important;

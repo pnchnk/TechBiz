@@ -35,7 +35,7 @@ $('#owl-team').owlCarousel({
     }
 });
 
-//feedback-section
+//feedback-section mainpage
 $('#owl-feedback').owlCarousel({
     loop:true,
     margin:25,
@@ -54,6 +54,7 @@ $('#owl-feedback').owlCarousel({
     }
 });
 
+//Clients-section mainpage
 $('#owl-clients').owlCarousel({
     loop:true,
     margin:25,
@@ -72,6 +73,7 @@ $('#owl-clients').owlCarousel({
     }
 });
 
+//blog-section mainpage
 $('#owl-blog').owlCarousel({
     loop:true,
     margin:25,
@@ -89,9 +91,27 @@ $('#owl-blog').owlCarousel({
     }
 });
 
-new ModalVideo('#services-modal-btn', {url: 'https://youtu.be/liJVSwOiiwg'});
+new ModalVideo('#services-modal-btn', {url: 'https://youtu.be/liJVSwOiiwg'}); 
 
-new ModalVideo('#faq-modal-video', {url: 'https://youtu.be/liJVSwOiiwg'});
+new ModalVideo('#faq-modal-video', {url: 'https://youtu.be/liJVSwOiiwg'}); 
+
+
+$('#services-owl').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        763:{
+            items: 2
+        },
+        1200: {
+            items: 3
+        }
+    }
+});
 
 // let lastScroll = 0;
 // const defaultOffset = 800;

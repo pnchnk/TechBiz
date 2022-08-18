@@ -1,0 +1,81 @@
+#about-founder {
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/about-bg-5-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.about-founder-info-subtitle {
+    text-transform: uppercase;
+    display: block;
+    color: #0E5AF2;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 23px 0;
+}
+
+.about-founder-info-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.about-founder-info-p {
+    margin-bottom: 18px;
+    color: #878D97;
+}
+
+.info-call {
+    padding-right: 80px;
+    border-right: #0E5AF2 2px solid;
+    .info-call-icon {
+        background-color: white;
+        color: var(--theme-color);
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin-right: 20px;
+        font-size: 20px;
+        border-radius: 50%;
+
+        .fa-phone-alt {
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-weight: 600;
+            transform: rotateY(180deg);
+            color: #0E5AF2;
+        }
+        
+    }
+
+    .info-call-tel {
+        .info-call-tel-label {
+            font-size: 14px;
+        }
+        .info-call-tel-number {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: $font-exo;
+            margin-bottom: 0;
+            a {
+                color: #0E5AF2;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.author-post {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #878D97;
+}
+.author-name {
+    font-family: $font-exo;
+    color: black;
+    font-weight: 700; 
+}
