@@ -1,0 +1,206 @@
+#about-feedback {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background-image: url('https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/testi-bg-4-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-feedback-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: blue;
+    font-family: $font-exo;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+
+    .fa-stop::before {
+        content: "\f04d";
+        display: block;
+        font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Font Awesome 5 Pro" !important;
+        font-weight: 900;
+        font-size: 16px;
+        color:  blue;
+    }
+}
+
+
+.about-feedback-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+    font-family: $font-exo;
+    display: inline-block;
+    width: 50%;
+}
+
+#about-feedback-modal-video {
+    float: right;
+    vertical-align: top;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    &:hover {
+        background-color: black;
+    }
+}
+
+.about-feedback-card {
+    background-color: white;
+    padding: 50px 50px 40px 50px;
+    border-radius: 5px;
+    margin: 0px 0 30px 0;
+    border-radius: 5px;
+    min-height: fit-content;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all ease 0.3s;
+    min-height: 250px;
+    height: fit-content;
+    &:hover {      
+            background-color: white;
+            box-shadow: 0px 10px 31px rgb(169 177 193 / 17%)
+    }
+
+    p {
+        color: #878D97;
+        font-size: 16px;
+        font-style: italic;
+        font-family: $font-fira;
+    }
+}
+.person-img {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin-right: 30px;
+    img {
+        width: 80px !important;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+
+.fa-quote-right:before {
+    content: "\f10e" ;
+    display: block;
+    font-family: "Font Awesome 6 Free";
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #0E5AF2;
+    text-align: center;
+    font-weight: 700!important;
+}
+
+.about-feedback-card-person {
+    .person-name {
+        font-size: 20px;
+        font-family: $font-exo;
+        font-weight: 700;
+    }
+
+    .person-position {
+        font-size: 14px;
+        color: #0E5AF2;
+        font-family: $font-fira;
+        font-weight: 400;
+    }
+}
+
+.about-feedback-prev, .about-feedback-next {
+    
+        text-transform: uppercase !important;
+        font-size: 16px !important;
+        font-family: $font-fira;
+        font-weight: 500 !important;
+        padding: 12px 30.5px !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
+        outline: 0 !important;
+        background-color: #EFF1F5 !important;
+        color: #0E5AF2 !important;
+        z-index: 5 !important;
+        position: relative !important;
+        margin-left: 10px;
+        position: absolute;
+        top: -430px;
+        left: 1030px;
+        &:hover {
+            color: white !important;
+            background-color: black !important;   
+        
+    }
+}
+
+.about-feedback-prev {
+    .fa-arrow-left::before {
+        content: '\f060';
+        text-align: center;
+        font-weight: 700!important;
+        font-family: "Font Awesome 6 Free";
+        margin-right: 4px;
+    }
+}
+
+.about-feedback-next {
+    .fa-arrow-right::before {
+        content: '\f061';
+        text-align: center;
+        font-weight: 700!important;
+        font-family: "Font Awesome 6 Free";
+        margin-left: 4px;
+    }
+}
+
+@media (max-width:1399px) {
+    #about-feedback {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width:991px) {
+    .about-feedback-card {
+        min-height: 380px;
+    }
+    .about-feedback-card-person {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .person-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .about-feedback-card-paragraph {
+        text-align: center;
+    }
+    .person-name {
+        text-align: center;
+    }
+    .person-position {
+       display: flex;
+       justify-content: center;
+    }
+}
+
+@media (max-width:767px) {
+    #about-feedback {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .about-feedback-card {
+        min-height: fit-content;
+        padding: 40px 35px 40px 35px;
+    }
+}

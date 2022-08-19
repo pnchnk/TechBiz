@@ -2737,7 +2737,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #about-blog {
-  padding-top: 120px;
+  padding-top: 50px;
   padding-bottom: 90px;
 }
 
@@ -2841,8 +2841,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1399px) {
-  #blog {
-    padding-top: 90px;
+  #about-blog {
+    padding-top: 40px;
     padding-bottom: 60px;
   }
   .card-title {
@@ -2950,6 +2950,370 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600 !important;
   font-size: 16px;
   margin-left: 5px;
+}
+
+.team-title {
+  padding-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team-title .team-title-span {
+  font-size: 16px;
+  color: #0E5AF2;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 600;
+}
+.team-title .team-title-h2 {
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.about-team-card {
+  background-color: white;
+  box-shadow: 0px 10px 31px rgba(169, 177, 193, 0.07);
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.about-team-card .about-team-img {
+  overflow: hidden;
+  position: relative;
+}
+.about-team-card .about-team-img img {
+  transition: all ease 0.4s;
+}
+.about-team-card:hover {
+  background-color: #f6f7fa;
+}
+.about-team-card:hover .about-team-img img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.about-team-card:hover .about-team-social {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about-team-social {
+  position: absolute;
+  background-color: #0E5AF2;
+  padding: 16.5px 30px;
+  left: 90px;
+  right: 90px;
+  bottom: 50px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.4s;
+}
+.about-team-social a {
+  margin-right: 16px;
+  font-size: 18px;
+}
+.about-team-social a:last-of-type {
+  margin-right: 0;
+}
+.about-team-social .fa-instagram::before {
+  display: block;
+  content: "\f16d";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.about-team-social .fa-facebook-f::before {
+  display: block;
+  content: "\f39e";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.about-team-social .fa-twitter::before {
+  display: block;
+  content: "\f099";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.about-team-social .fa-behance::before {
+  display: block;
+  content: "\f1b4";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+.about-team-social .fa-youtube::before {
+  display: block;
+  content: "\f167";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 400;
+  width: 100%;
+  height: 14px;
+  color: #bbd1ff;
+  transition: all ease 0.3s;
+}
+
+.about-team-social a:hover .fa-facebook-f::before {
+  color: white;
+}
+
+.about-team-social a:hover .fa-envelope::before {
+  color: white;
+}
+
+.about-team-social a:hover .fa-instagram::before {
+  color: white;
+}
+
+.about-team-social a:hover .fa-behance::before {
+  color: white;
+}
+
+.about-team-social a:hover .fa-youtube::before {
+  color: white;
+}
+
+.about-team-social a:hover .fa-twitter::before {
+  color: white;
+}
+
+.team-bio {
+  padding: 30px 0 23px 0;
+  text-align: center;
+}
+.team-bio h3 {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.team-bio h3 a {
+  color: black;
+  transition: all ease 0.4s;
+}
+.team-bio h3 a:hover {
+  color: #0E5AF2;
+}
+.team-bio p {
+  font-size: 14px;
+  color: #0E5AF2;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .team-title {
+    padding-top: 60px;
+  }
+}
+#about-feedback {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-image: url("https://themeforest.vecuro.com/html/techbiz/demo/assets/img/bg/testi-bg-4-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about-feedback-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: blue;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+.about-feedback-subtitle .fa-stop::before {
+  content: "\f04d";
+  display: block;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Font Awesome 5 Pro" !important;
+  font-weight: 900;
+  font-size: 16px;
+  color: blue;
+}
+
+.about-feedback-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  font-family: "Exo", sans-serif;
+  display: inline-block;
+  width: 50%;
+}
+
+#about-feedback-modal-video {
+  float: right;
+  vertical-align: top;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none;
+}
+#about-feedback-modal-video:hover {
+  background-color: black;
+}
+
+.about-feedback-card {
+  background-color: white;
+  padding: 50px 50px 40px 50px;
+  border-radius: 5px;
+  margin: 0px 0 30px 0;
+  border-radius: 5px;
+  min-height: fit-content;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all ease 0.3s;
+  min-height: 250px;
+  height: fit-content;
+}
+.about-feedback-card:hover {
+  background-color: white;
+  box-shadow: 0px 10px 31px rgba(169, 177, 193, 0.17);
+}
+.about-feedback-card p {
+  color: #878D97;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.person-img {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-right: 30px;
+}
+.person-img img {
+  width: 80px !important;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fa-quote-right:before {
+  content: "\f10e";
+  display: block;
+  font-family: "Font Awesome 6 Free";
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  background-color: #0E5AF2;
+  text-align: center;
+  font-weight: 700 !important;
+}
+
+.about-feedback-card-person .person-name {
+  font-size: 20px;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+}
+.about-feedback-card-person .person-position {
+  font-size: 14px;
+  color: #0E5AF2;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
+.about-feedback-prev, .about-feedback-next {
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500 !important;
+  padding: 12px 30.5px !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  outline: 0 !important;
+  background-color: #EFF1F5 !important;
+  color: #0E5AF2 !important;
+  z-index: 5 !important;
+  position: relative !important;
+  margin-left: 10px;
+  position: absolute;
+  top: -430px;
+  left: 1030px;
+}
+.about-feedback-prev:hover, .about-feedback-next:hover {
+  color: white !important;
+  background-color: black !important;
+}
+
+.about-feedback-prev .fa-arrow-left::before {
+  content: "\f060";
+  text-align: center;
+  font-weight: 700 !important;
+  font-family: "Font Awesome 6 Free";
+  margin-right: 4px;
+}
+
+.about-feedback-next .fa-arrow-right::before {
+  content: "\f061";
+  text-align: center;
+  font-weight: 700 !important;
+  font-family: "Font Awesome 6 Free";
+  margin-left: 4px;
+}
+
+@media (max-width: 1399px) {
+  #about-feedback {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .about-feedback-card {
+    min-height: 380px;
+  }
+  .about-feedback-card-person {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .person-img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .about-feedback-card-paragraph {
+    text-align: center;
+  }
+  .person-name {
+    text-align: center;
+  }
+  .person-position {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  #about-feedback {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .about-feedback-card {
+    min-height: fit-content;
+    padding: 40px 35px 40px 35px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

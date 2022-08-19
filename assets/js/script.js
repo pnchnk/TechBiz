@@ -114,12 +114,48 @@ $('#services-owl').owlCarousel({
     }
 });
 
-// let lastScroll = 0;
-// const defaultOffset = 800;
-// const header = document.querySelector('#js-header-dropdown');
+$('#owl-about-team').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        576:{
+            items: 2
+        },
+        992:{
+            items: 3
+        },
+        // 1200: {
+        //     items: 4
+        // }
+    }
+});
+
+$('#owl-about-feedback').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        767:{
+            items: 2
+        }
+    }
+});
+
+new ModalVideo('#about-feedback-modal-video', {url: 'https://youtu.be/liJVSwOiiwg'}); 
+
+let lastScroll = 0;
+const defaultOffset = 800;
+const header = document.querySelector('#js-header-dropdown');
  
-// const scrollPosition = () => window.pageYOffset ;
-// const containHide = () => header.classList.contains('header-fixed');
+const scrollPosition = () => window.pageYOffset ;
+const containHide = () => header.classList.contains('header-fixed');
  
 // window.addEventListener('scroll', () => {
 //     if(scrollPosition() > lastScroll  && scrollPosition() > defaultOffset) {
