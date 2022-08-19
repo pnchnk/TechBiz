@@ -33,6 +33,19 @@
             color: white !important;
         }
     }
+    .service-card-top {
+        .service-card-number {
+            line-height: 1;
+            color: rgba(14,89,242,.1);
+            font-size: 60px;
+            font-weight: 700;
+            font-family: $font-exo;
+            margin-top: 4px;
+            opacity: 1;
+            visibility: visible;
+            display: block;
+        }
+    }
 
     p {
         font-family: $font-fira;
@@ -72,18 +85,6 @@
             z-index: 10;
         }
 
-        .service-card-number {
-            line-height: 1;
-            color: rgba(14,89,242,.1);
-            font-size: 60px;
-            font-weight: 700;
-            font-family: $font-exo;
-            margin-top: 4px;
-            opacity: 1;
-            visibility: visible;
-            position: absolute;
-            left: 300%;
-        }
     }
 
     .service-card-h3 {
@@ -122,3 +123,75 @@
     }
 }
 
+@media (min-width: 1500px) and (max-width: 1921px) {
+    .container-right {
+        max-width: 1576px !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 1399px) {
+    #about-founder {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .info-call {
+        padding-right: 20px !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .service-card {
+        .service-card-h3 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #service {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    #about-founder {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .about-founder-info-subtitle {
+        margin-top: 40px !important;
+    }
+    .founder-button {
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-founder-info-title {
+        font-size: 36px !important;
+    }
+}
+
+@media (max-width:575px) {
+    .about-founder-info-title {
+        font-size: 28px !important;
+        text-align: center;
+    }
+    .info-call {
+        border: none !important;
+        margin-top: 10px;
+        justify-content: center !important;
+    }
+    .author-post, .author-name, .about-founder-info-p, .about-founder-info-subtitle {
+        text-align: center;
+    }
+    .founder-button {
+        display: block !important;
+        width: 50%;
+        margin: auto;
+    }
+}

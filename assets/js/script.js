@@ -102,12 +102,13 @@ $('#services-owl').owlCarousel({
     nav:false,
     responsive:{
         0:{
-            items: 1
+            items: 1,
+            margin:0
         },
         763:{
             items: 2
         },
-        1200: {
+        992: {
             items: 3
         }
     }

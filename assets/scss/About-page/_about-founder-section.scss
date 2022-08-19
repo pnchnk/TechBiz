@@ -3,8 +3,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 90px;
 }
 
 .about-founder-info-subtitle {
@@ -78,4 +76,26 @@
     font-family: $font-exo;
     color: black;
     font-weight: 700; 
+}
+
+.founder-button {
+    text-transform: uppercase;
+    font-size: 16px !important;
+    padding: 12px 30px !important;
+    font-family: $font-fira !important;
+    font-weight: 500 !important;
+    border: none !important;
+    margin-top: 30px;
+    &:hover {
+        background-color: black !important;
+    }
+}
+
+.fa-arrow-right::before {
+    content: "\f061";
+    display: block;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+    font-weight: 600 !important;
+    font-size: 16px;
+    margin-left: 5px;
 }
